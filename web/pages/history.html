@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id" data-theme="langit">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Riwayat</title>
+  <link rel="icon" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/history.css">
+</head>
+<body data-root="../">
+  <div id="content">
+    <section class="card" id="empty" hidden>
+      <p class="muted">Belum ada sesi tersimpan.</p>
+      <a class="btn primary" href="roles.html" style="margin-top:12px">Mulai latihan</a>
+    </section>
+    <div class="stack" id="wrap" hidden>
+      <div class="h-head"><h2>Tren antar percobaan</h2><select id="roleSel"></select></div>
+      <section class="grid g2">
+        <div class="card"><h3 class="ch">Pemenuhan rubrik dan fokus pandangan (%)</h3><div id="chartA"></div></div>
+        <div class="card"><h3 class="ch">Kejadian arah kepala (kali)</h3><div id="chartB"></div></div>
+      </section>
+      <p class="muted small">Tren menunjukkan perubahan indikator antar percobaan dan bukan bukti sebab-akibat. Untuk kejadian arah kepala, semakin sedikit semakin sesuai target latihan.</p>
+      <section class="card">
+        <h2 style="margin-bottom:8px">Semua sesi</h2>
+        <div class="tw"><table class="tbl" id="tbl"></table></div>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="../assets/js/pages/history.js"></script>
+</body>
+</html>

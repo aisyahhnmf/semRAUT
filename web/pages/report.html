@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id" data-theme="langit">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Laporan</title>
+  <link rel="icon" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/report.css">
+</head>
+<body data-root="../">
+  <div id="content">
+    <section class="card" id="empty" hidden>
+      <p class="muted">Belum ada laporan. Selesaikan satu sesi latihan untuk melihat hasilnya.</p>
+      <a class="btn primary" href="roles.html" style="margin-top:12px">Mulai latihan</a>
+    </section>
+
+    <div class="stack" id="wrap" hidden>
+      <p class="banner">Hasil ini adalah umpan balik latihan, bukan penilaian kelayakan kerja. Arah pandang dan arah kepala bukan bukti kejujuran atau kompetensi.</p>
+
+      <section class="grid top-grid">
+        <div class="card" id="ringkas"></div>
+        <div class="card">
+          <h2>Saran latihan</h2>
+          <ul class="saran" id="saran"></ul>
+          <div id="kekuatan" class="kekuatan"></div>
+        </div>
+      </section>
+
+      <section class="card"><h2 style="margin-bottom:8px">Rubrik jawaban</h2><div id="rubrik"></div></section>
+
+      <section class="ind-grid">
+        <div class="card"><h2>Indikator visual</h2><div id="aspek"></div></div>
+        <div class="stack">
+          <div class="card"><h2 style="margin-bottom:6px">Fokus pandangan per pertanyaan (%)</h2><div id="trenFokus"></div></div>
+          <div class="card"><h2 style="margin-bottom:6px">Kejadian arah kepala per pertanyaan</h2><div id="trenKepala"></div></div>
+        </div>
+      </section>
+
+      <section class="card" id="banding" hidden>
+        <h2 style="margin-bottom:8px">Perbandingan dengan percobaan sebelumnya</h2>
+        <div id="bandingBody"></div>
+      </section>
+
+      <section class="card">
+        <h2 style="margin-bottom:12px">Rincian per pertanyaan</h2>
+        <div class="tabs" id="tabs"></div>
+        <div id="qDetail"></div>
+      </section>
+
+      <div class="actions">
+        <button class="btn" id="txtBtn">Unduh transkrip (.txt)</button>
+        <button class="btn" id="printBtn">Cetak laporan</button>
+        <a class="btn primary" id="againLink" href="roles.html">Latihan lagi</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../assets/js/pages/report.js"></script>
+</body>
+</html>
