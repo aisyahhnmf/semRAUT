@@ -1,0 +1,48 @@
+{
+  "versi": 1,
+  "catatan": "Contoh awal. Matriks pertanyaan dan rubrik resmi disusun tim dan sebaiknya ditinjau penilai manusia.",
+  "posisi": [
+    {
+      "id": "data-analyst", "nama": "Data Analyst", "bidang": "Data & Strategi",
+      "deskripsi": "Mengolah data menjadi temuan yang dapat dipahami dan dipakai untuk keputusan.",
+      "soal": [
+        {"id": "da1", "teks": "Ceritakan proyek analisis data yang pernah Anda kerjakan.", "kompetensi": "Pengalaman analisis",
+         "kriteria": [{"teks": "Menjelaskan tujuan dan data yang digunakan", "bobot": 0.5}, {"teks": "Menyebutkan metode atau alat yang dipakai", "bobot": 0.5}]},
+        {"id": "da2", "teks": "Bagaimana Anda memeriksa kualitas data sebelum analisis?", "kompetensi": "Ketelitian data",
+         "kriteria": [{"teks": "Menyebut pemeriksaan data hilang, duplikat, atau pencilan", "bobot": 0.6}, {"teks": "Menjelaskan tindakan perbaikan", "bobot": 0.4}]},
+        {"id": "da3", "teks": "Bagaimana Anda menjelaskan temuan analisis kepada orang non-teknis?", "kompetensi": "Komunikasi",
+         "kriteria": [{"teks": "Menggunakan bahasa sederhana atau analogi", "bobot": 0.5}, {"teks": "Mengaitkan temuan dengan keputusan atau dampak", "bobot": 0.5}]},
+        {"id": "da4", "teks": "Ceritakan saat hasil analisis Anda tidak sesuai harapan.", "kompetensi": "Pemecahan masalah",
+         "kriteria": [{"teks": "Menjelaskan situasi dan penyebabnya", "bobot": 0.5}, {"teks": "Menjelaskan tindak lanjut dan pembelajaran", "bobot": 0.5}]}
+      ]
+    },
+    {
+      "id": "customer-success", "nama": "Customer Success", "bidang": "Layanan Pelanggan",
+      "deskripsi": "Membantu pelanggan berhasil memakai produk dan menjaga hubungan jangka panjang.",
+      "soal": [
+        {"id": "cs1", "teks": "Ceritakan pengalaman Anda melayani atau membantu orang lain.", "kompetensi": "Orientasi pelayanan",
+         "kriteria": [{"teks": "Menjelaskan situasi dan kebutuhan pihak yang dibantu", "bobot": 0.5}, {"teks": "Menjelaskan tindakan nyata yang dilakukan", "bobot": 0.5}]},
+        {"id": "cs2", "teks": "Bagaimana Anda menghadapi pelanggan yang sedang kesal?", "kompetensi": "Pengelolaan emosi",
+         "kriteria": [{"teks": "Menunjukkan sikap tenang dan empati", "bobot": 0.5}, {"teks": "Menyebutkan langkah penyelesaian", "bobot": 0.5}]},
+        {"id": "cs3", "teks": "Bagaimana Anda memprioritaskan banyak permintaan sekaligus?", "kompetensi": "Manajemen prioritas",
+         "kriteria": [{"teks": "Menyebut kriteria prioritas", "bobot": 0.5}, {"teks": "Menjelaskan cara memantau dan menindaklanjuti", "bobot": 0.5}]},
+        {"id": "cs4", "teks": "Bagaimana Anda mengukur keberhasilan layanan Anda?", "kompetensi": "Orientasi hasil",
+         "kriteria": [{"teks": "Menyebut indikator keberhasilan", "bobot": 0.6}, {"teks": "Mengaitkannya dengan kepuasan atau retensi pelanggan", "bobot": 0.4}]}
+      ]
+    },
+    {
+      "id": "marketing", "nama": "Marketing Specialist", "bidang": "Pemasaran",
+      "deskripsi": "Merancang dan mengevaluasi kampanye agar pesan sampai ke audiens yang tepat.",
+      "soal": [
+        {"id": "mk1", "teks": "Ceritakan kampanye atau konten yang pernah Anda buat.", "kompetensi": "Kreativitas dan eksekusi",
+         "kriteria": [{"teks": "Menjelaskan tujuan dan target audiens", "bobot": 0.5}, {"teks": "Menjelaskan ide dan hasil yang dicapai", "bobot": 0.5}]},
+        {"id": "mk2", "teks": "Bagaimana Anda memahami target audiens?", "kompetensi": "Riset audiens",
+         "kriteria": [{"teks": "Menyebut cara riset (data, survei, tren)", "bobot": 0.5}, {"teks": "Menjelaskan cara menyesuaikan pesan", "bobot": 0.5}]},
+        {"id": "mk3", "teks": "Bagaimana Anda menilai keberhasilan sebuah kampanye?", "kompetensi": "Analitik pemasaran",
+         "kriteria": [{"teks": "Menyebut metrik yang relevan", "bobot": 0.6}, {"teks": "Menjelaskan cara memakai hasil untuk perbaikan", "bobot": 0.4}]},
+        {"id": "mk4", "teks": "Ceritakan saat Anda bekerja dengan tim untuk tenggat yang ketat.", "kompetensi": "Kolaborasi",
+         "kriteria": [{"teks": "Menjelaskan peran Anda dalam tim", "bobot": 0.5}, {"teks": "Menjelaskan cara menjaga koordinasi dan ketepatan waktu", "bobot": 0.5}]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+.top-grid{grid-template-columns:320px 1fr}
+@media(max-width:900px){.top-grid{grid-template-columns:1fr}}
+
+.big-pct{font-size:44px;font-weight:800;color:var(--accent-strong);line-height:1.1;margin:4px 0 10px}
+.stackbar{display:flex;height:12px;border-radius:99px;overflow:hidden;background:var(--line)}
+.stackbar i{display:block;height:100%}
+.kual{margin:6px 0}
+
+.saran{list-style:none;display:grid;gap:8px;margin:12px 0}
+.saran li{background:var(--accent-soft);border-radius:var(--r-md);padding:10px 12px}
+.saran li small{display:block;margin-top:4px}
+.kekuatan{display:flex;gap:8px;flex-wrap:wrap}
+
+.rub-q{padding:14px 0;border-bottom:1px solid var(--line)}
+.rub-q:last-of-type{border:0}
+.rub-head{display:flex;flex-direction:column;margin-bottom:8px}
+.rub-row{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:start;padding:6px 0}
+@media(max-width:600px){.rub-row{grid-template-columns:1fr}}
+
+/* Indikator visual (kiri) + dua grafik bertumpuk (kanan) */
+.ind-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:1000px){.ind-grid{grid-template-columns:1fr}}
+.aspek{padding:14px 0;border-bottom:1px solid var(--line)}
+.aspek:last-of-type{border:0}
+.aspek-head{display:flex;gap:10px;align-items:baseline;margin-bottom:6px}
+.aspek p{margin-top:6px}
+.ml{margin-left:auto}
+
+/* Rincian per pertanyaan: dua kolom */
+.qd-head{margin-bottom:6px}
+.qd-head p{margin-bottom:2px}
+.qd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 32px;margin-top:8px}
+@media(max-width:1000px){.qd{grid-template-columns:1fr}}
+.qd h3{margin:14px 0 6px}
+.qd>div>h3:first-child{margin-top:4px}
+.tl-row{display:grid;grid-template-columns:100px 1fr;gap:10px;align-items:center;margin:8px 0}
+.tl{position:relative;height:14px;border-radius:99px;background:var(--line);overflow:hidden}
+.tl.dim{opacity:.45}
+.seg{position:absolute;top:0;bottom:0}
+.seg.good{background:var(--good)} .seg.warn{background:var(--warn)} .seg.bad{background:var(--bad)}
+.kej{list-style:none;margin:6px 0 8px}
+.kej li{padding:6px 0;border-bottom:1px solid var(--line)}
+.minis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0}
+.mini{background:var(--bg);border-radius:var(--r-md);padding:10px 12px}
+.mini b{display:block;font-size:18px}
+.transkrip{background:var(--bg);border-radius:var(--r-md);padding:12px 14px;line-height:1.6;margin-top:6px}
+.warn-box{background:color-mix(in srgb,var(--warn) 14%,#fff);border-radius:var(--r-md);padding:10px 12px;margin:6px 0 4px;font-size:13px}
+
+/* Tombol aksi: satu baris di paling bawah */
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
