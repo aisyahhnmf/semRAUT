@@ -1,0 +1,6 @@
+﻿criterion_id,criterion,weight_percent,score_0,score_1,score_2,score_3,score_4
+relevance,Relevansi dan pemahaman konteks,25,Tidak menjawab/tidak relevan,Sebagian kecil relevan,"Cukup relevan, ada bagian inti hilang",Menjawab inti pertanyaan,Sangat relevan dan batas masalah jelas
+technical_accuracy,Ketepatan teknis sesuai role,30,Tidak ada bukti teknis,Ada kekeliruan penting,"Sebagian benar, ada kekurangan substansial",Konsep dan langkah utama tepat,"Akurat, lengkap, membahas asumsi/trade-off"
+reasoning,Penalaran dan pemecahan masalah,20,Tidak ada pendekatan,Langkah tidak jelas,"Langkah dasar, alasan terbatas",Langkah logis dengan alasan,Sistematis dan membandingkan alternatif
+evidence_completeness,Kelengkapan bukti/contoh,15,Tidak ada bukti,Bukti sangat terbatas,Contoh belum cukup mendukung,Contoh mendukung jawaban,Bukti spesifik dan batasan dijelaskan
+communication,Komunikasi dan struktur jawaban,10,Tidak dapat dipahami/kosong,Sulit diikuti,Cukup jelas namun kurang runtut,Jelas dan terstruktur,"Sangat jelas, ringkas, sesuai audiens"

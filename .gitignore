@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.env
+reports/*.csv
+reports/figures/*.png
+# Jangan commit rekaman audio/video atau data pribadi tanpa persetujuan dan dasar izin.
+*.mp4
+*.mov
+*.wav
+*.mp3

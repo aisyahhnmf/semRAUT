@@ -1,0 +1,16 @@
+﻿role,competency_id,competency,question_type,difficulty,question_seed,expected_evidence,followup_focus,rubric_version
+data_analyst,DA_SQL_01,SQL dan manipulasi data,technical,intermediate,Bagaimana Anda menyelidiki penurunan penjualan?,"Validasi data, bandingkan periode, segmentasi, simpulkan insight",Validasi kualitas data,v1.0
+data_analyst,DA_STAT_01,Statistik dasar,technical,intermediate,Bagaimana menentukan apakah perubahan metrik bermakna?,Metode dan asumsi statistik sesuai,Asumsi statistik,v1.0
+data_analyst,DA_VIZ_01,Visualisasi,technical,basic,Bagaimana memilih grafik untuk menjelaskan tren?,"Grafik sesuai tujuan, label jelas, tidak menyesatkan",Pemilihan grafik,v1.0
+data_analyst,DA_INS_01,Penarikan insight,situational,intermediate,Konversi turun tetapi traffic naik. Apa langkah Anda?,"Segmentasi funnel, hipotesis, validasi, tindak lanjut",Hipotesis alternatif,v1.0
+data_analyst,DA_COM_01,Komunikasi rekomendasi,behavioral,intermediate,Bagaimana menjelaskan temuan data kepada stakeholder?,"Bahasa sesuai audiens, struktur, rekomendasi, batasan",Komunikasi stakeholder,v1.0
+data_engineer,DE_SQL_01,SQL dan pemodelan data,technical,intermediate,Bagaimana merancang tabel transaksi dan pelanggan?,"Kunci, relasi, normalisasi/model analitik sesuai kebutuhan",Trade-off desain,v1.0
+data_engineer,DE_PIPE_01,ETL/ELT dan pipeline,technical,intermediate,Apa yang dilakukan jika pipeline gagal?,"Monitoring, retry aman, idempotensi, logging, notifikasi",Pemulihan pipeline,v1.0
+data_engineer,DE_QUAL_01,Kualitas data,situational,intermediate,Bagaimana mendeteksi dan menangani data duplikat?,"Aturan deduplikasi, kunci bisnis, audit",Aturan deduplikasi,v1.0
+data_engineer,DE_SCALE_01,Skalabilitas,technical,advanced,Apa pertimbangan saat volume data naik sepuluh kali?,"Bottleneck, partisi, biaya, SLA, desain terukur",Trade-off biaya dan latensi,v1.0
+data_engineer,DE_COM_01,Komunikasi insiden,behavioral,intermediate,Bagaimana memberi tahu tim bisnis tentang keterlambatan data?,"Dampak, estimasi, alternatif, mitigasi",Komunikasi insiden,v1.0
+data_scientist,DS_STAT_01,Statistik dan eksperimen,technical,intermediate,Bagaimana merancang eksperimen perubahan produk?,"Hipotesis, metrik, randomisasi, ukuran sampel, confounder",Validitas eksperimen,v1.0
+data_scientist,DS_ML_01,Pemilihan algoritma,technical,intermediate,Bagaimana memilih model untuk memprediksi churn?,"Baseline, tujuan, fitur, trade-off, validasi",Baseline dan trade-off,v1.0
+data_scientist,DS_EVAL_01,Evaluasi model,technical,intermediate,Kapan accuracy tidak cukup?,"Class imbalance, precision/recall/F1, biaya kesalahan",Pemilihan metrik,v1.0
+data_scientist,DS_LEAK_01,Data leakage,situational,advanced,Bagaimana memeriksa kemungkinan data leakage?,"Pemisahan waktu/entitas, fitur pascakejadian, preprocessing",Pemisahan data,v1.0
+data_scientist,DS_COM_01,Interpretasi hasil,behavioral,intermediate,Bagaimana menjelaskan keterbatasan model kepada bisnis?,"Ketidakpastian, batas domain, risiko, rekomendasi",Ketidakpastian model,v1.0

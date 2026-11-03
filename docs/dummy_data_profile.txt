@@ -1,0 +1,13 @@
+Rows: 1296
+Sessions: 12
+Synthetic: True
+Indicator counts:
+indicator_type
+facial_expression    432
+eye_direction        432
+head_motion          432
+Quality counts:
+quality_flag
+valid             1218
+low_confidence      58
+no_detection        20
