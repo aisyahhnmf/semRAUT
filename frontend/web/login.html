@@ -1,0 +1,261 @@
+```html
+<!doctype html>
+<html lang="id" data-theme="langit">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#01957F">
+
+  <title>Masuk · FOKARA</title>
+
+  <link rel="icon" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/auth.css">
+
+  <style>
+    .auth-brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      margin-bottom: 32px;
+    }
+
+    .auth-logo {
+      display: block;
+      width: 210px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .auth-disclaimer {
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .auth-logo {
+        width: 175px;
+      }
+    }
+  </style>
+</head>
+
+<body class="auth-page" data-root="">
+
+  <main class="auth-layout">
+
+    <!-- BAGIAN INTRO / BRAND -->
+    <section class="auth-intro">
+
+      <a class="auth-brand" href="login.html" aria-label="FOKARA">
+        <img
+          src="assets/img/fokara-logo.png"
+          alt="FOKARA"
+          class="auth-logo"
+        >
+      </a>
+
+      <div class="auth-intro-copy">
+        <span class="auth-kicker">PERSIAPAN WAWANCARA</span>
+
+        <h1>
+          Kenali potensimu.<br>
+          <span>Latih percaya dirimu.</span>
+        </h1>
+
+        <p>
+          Ruang latihan wawancara untuk membantu mengevaluasi jawaban,
+          arah pandang, dan cara penyampaianmu.
+        </p>
+      </div>
+
+      <p class="auth-disclaimer">
+        FOKARA adalah alat latihan, bukan sistem seleksi.
+      </p>
+
+    </section>
+
+
+    <!-- BAGIAN FORM LOGIN -->
+    <section class="auth-panel-wrap">
+
+      <div class="auth-panel">
+
+        <div class="auth-heading">
+          <span class="auth-kicker">SELAMAT DATANG</span>
+
+          <h2 id="formTitle">Masuk ke akunmu</h2>
+
+          <p id="formSubtitle">
+            Lanjutkan latihan wawancaramu bersama FOKARA.
+          </p>
+        </div>
+
+
+        <!-- TAB LOGIN DAN REGISTER -->
+        <div class="auth-tabs" role="tablist" aria-label="Jenis autentikasi">
+
+          <button
+            class="auth-tab active"
+            id="loginTab"
+            type="button"
+          >
+            Masuk
+          </button>
+
+          <button
+            class="auth-tab"
+            id="registerTab"
+            type="button"
+          >
+            Daftar
+          </button>
+
+        </div>
+
+
+        <!-- FORM AUTENTIKASI -->
+        <form
+          id="authForm"
+          class="auth-form"
+          method="post"
+          action="#"
+          onsubmit="return false;"
+        >
+
+          <!-- NAMA LENGKAP -->
+          <div id="nameWrap" hidden>
+            <label for="fullName">Nama lengkap</label>
+
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              placeholder="Nama lengkap"
+              autocomplete="name"
+              minlength="2"
+            >
+          </div>
+
+
+          <!-- EMAIL -->
+          <label for="email">Email</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="nama@email.com"
+            autocomplete="email"
+            required
+          >
+
+
+          <!-- PASSWORD -->
+          <label for="password">Password</label>
+
+          <div class="password-wrap">
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Masukkan password"
+              autocomplete="current-password"
+              minlength="8"
+              required
+            >
+
+            <button
+              type="button"
+              id="togglePassword"
+              class="password-toggle"
+              aria-label="Tampilkan password"
+            >
+              Lihat
+            </button>
+
+          </div>
+
+
+          <!-- KONFIRMASI PASSWORD -->
+          <div id="confirmWrap" hidden>
+
+            <label for="confirmPassword">
+              Konfirmasi password
+            </label>
+
+            <input
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              placeholder="Ulangi password"
+              autocomplete="new-password"
+              minlength="8"
+            >
+
+          </div>
+
+
+          <!-- TOMBOL SUBMIT -->
+          <button
+            id="submitBtn"
+            class="btn primary auth-submit"
+            type="submit"
+          >
+            Masuk
+          </button>
+
+
+          <!-- PESAN AUTENTIKASI -->
+          <p
+            id="authMessage"
+            class="auth-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+
+        <!-- PINDAH LOGIN / REGISTER -->
+        <p class="auth-switch" id="switchText">
+
+          <span id="switchPrompt">
+            Belum punya akun?
+          </span>
+
+          <button
+            type="button"
+            id="switchMode"
+          >
+            Daftar sekarang
+          </button>
+
+        </p>
+
+
+        <!-- INFORMASI KEAMANAN -->
+        <p class="auth-security">
+          Akun dan sesi login dikelola oleh Supabase Auth.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- JAVASCRIPT AUTENTIKASI -->
+  <script
+    type="module"
+    src="assets/js/pages/login.js"
+  ></script>
+
+</body>
+</html>
+```

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="id" data-theme="langit">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Laporan Latihan | semRAUT</title>
+
+  <link rel="icon" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages/report.css">
+</head>
+
+<body data-root="../">
+
+  <div id="content">
+
+    <!-- EMPTY STATE -->
+    <section class="card report-empty" id="empty" hidden>
+      <div class="empty-icon">📋</div>
+      <h2>Laporan belum tersedia</h2>
+      <p class="muted">
+        Selesaikan satu sesi latihan untuk melihat hasil evaluasimu.
+      </p>
+      <a class="btn primary" href="roles.html">
+        Mulai latihan
+      </a>
+    </section>
+
+    <!-- REPORT CONTENT -->
+    <main class="report-wrap stack" id="wrap" hidden>
+
+      <!-- DISCLAIMER -->
+      <div class="banner report-banner">
+        <span class="banner-icon">ⓘ</span>
+        <p>
+          Hasil ini merupakan umpan balik latihan, bukan penilaian
+          kelayakan kerja. Arah pandang dan arah kepala bukan bukti
+          kejujuran atau kompetensi.
+        </p>
+      </div>
+
+      <!-- SUMMARY -->
+      <section class="report-top-grid">
+
+        <article class="card report-card summary-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">HASIL LATIHAN</span>
+              <h2>Ringkasan laporan</h2>
+            </div>
+            <span class="section-icon">◷</span>
+          </div>
+
+          <div id="ringkas"></div>
+        </article>
+
+        <article class="card report-card advice-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">EVALUASI</span>
+              <h2>Saran latihan</h2>
+            </div>
+            <span class="section-icon">✦</span>
+          </div>
+
+          <ul class="saran" id="saran"></ul>
+
+          <div class="strength-section">
+            <div class="strength-heading">
+              <span class="strength-icon">✓</span>
+              <h3>Kekuatan jawaban</h3>
+            </div>
+
+            <div id="kekuatan" class="kekuatan"></div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- RUBRIC -->
+      <section class="card report-card report-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">PENILAIAN JAWABAN</span>
+            <h2>Rubrik jawaban</h2>
+            <p class="section-description">
+              Rincian evaluasi berdasarkan kriteria penilaian.
+            </p>
+          </div>
+          <span class="section-icon">▤</span>
+        </div>
+
+        <div id="rubrik"></div>
+      </section>
+
+      <!-- COMPUTER VISION -->
+      <section class="report-section ind-grid">
+
+        <article class="card report-card indicator-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">ANALISIS VISUAL</span>
+              <h2>Indikator visual</h2>
+              <p class="section-description">
+                Ringkasan hasil observasi Computer Vision.
+              </p>
+            </div>
+            <span class="section-icon">◉</span>
+          </div>
+
+          <div id="aspek"></div>
+        </article>
+
+        <div class="report-chart-column">
+
+          <article class="card report-card chart-card">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">GAZE ANALYSIS</span>
+                <h2>Fokus pandangan</h2>
+                <p class="section-description">
+                  Proporsi label pandangan ke kamera per pertanyaan.
+                </p>
+              </div>
+            </div>
+
+            <div id="trenFokus"></div>
+          </article>
+
+          <article class="card report-card chart-card">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">HEAD MOTION ANALYSIS</span>
+                <h2>Gerakan kepala</h2>
+                <p class="section-description">
+                  Jumlah observasi berdasarkan label gerakan kepala.
+                </p>
+              </div>
+            </div>
+
+            <div id="trenKepala"></div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SESSION COMPARISON -->
+      <section class="card report-card report-section" id="banding" hidden>
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">RIWAYAT PERFORMA</span>
+            <h2>Perbandingan percobaan</h2>
+            <p class="section-description">
+              Perkembangan hasil latihan dari percobaan sebelumnya.
+            </p>
+          </div>
+          <span class="section-icon">↗</span>
+        </div>
+
+        <div id="bandingBody"></div>
+      </section>
+
+      <!-- QUESTION DETAILS -->
+      <section class="card report-card report-section question-section">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">DETAIL EVALUASI</span>
+            <h2>Rincian per pertanyaan</h2>
+            <p class="section-description">
+              Lihat transkrip, observasi visual, dan evaluasi setiap jawaban.
+            </p>
+          </div>
+          <span class="section-icon">☷</span>
+        </div>
+
+        <div class="tabs" id="tabs"></div>
+
+        <div id="qDetail"></div>
+
+      </section>
+
+      <!-- ACTIONS -->
+      <div class="actions report-actions">
+        <button class="btn" id="txtBtn">
+          <span>↓</span>
+          Unduh transkrip (.txt)
+        </button>
+
+        <button class="btn" id="printBtn">
+          <span>▤</span>
+          Cetak laporan
+        </button>
+
+        <a class="btn primary" id="againLink" href="roles.html">
+          Latihan lagi
+          <span>→</span>
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <script type="module" src="../assets/js/pages/report.js"></script>
+
+</body>
+</html>

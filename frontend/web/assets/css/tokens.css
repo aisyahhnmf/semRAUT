@@ -1,0 +1,17 @@
+:root {
+  --font: "Plus Jakarta Sans", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r-lg: 18px; --r-md: 12px; --r-sm: 8px;
+  --shadow: 0 1px 2px rgba(1,64,54,.04), 0 8px 24px rgba(1,64,54,.07);
+
+  --bg: #EEFFF7; --surface: #FFFFFF;
+  --ink: #123B36; --muted: #52756D; --line: #C3FFF7;
+  --good: #01957F; --warn: #C18A36; --bad: #C65B65;
+}
+
+/* Palet semRAUT: hijau tua, mint, aqua, dan putih kehijauan */
+:root, [data-theme="langit"], [data-theme="mint"], [data-theme="persik"] {
+  --accent: #01957F;
+  --accent-strong: #007D6B;
+  --accent-soft: #C3FFF7;
+  --tie: #00C2A5;
+}

@@ -1,0 +1,1065 @@
+
+/* =====================================================
+   REPORT PAGE — SEMRAUT
+===================================================== */
+
+#wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-bottom: 28px;
+  gap: 22px;
+}
+
+#wrap,
+#wrap * {
+  box-sizing: border-box;
+}
+
+#wrap h2 {
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 750;
+  margin: 0;
+  letter-spacing: -0.35px;
+}
+
+#wrap h3 {
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+#wrap p {
+  line-height: 1.65;
+}
+
+#wrap .small {
+  font-size: 12px;
+}
+
+#wrap .muted {
+  color: var(--muted);
+}
+
+#wrap [hidden] {
+  display: none !important;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.report-empty {
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 36px 28px;
+  text-align: center;
+}
+
+.report-empty h2 {
+  margin: 12px 0 8px;
+}
+
+.report-empty p {
+  margin-bottom: 20px;
+}
+
+.empty-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: var(--accent-soft);
+  font-size: 24px;
+}
+
+
+/* =====================================================
+   CARD & SECTION
+===================================================== */
+
+.report-card {
+  min-width: 0;
+  padding: 24px;
+  border-radius: var(--r-lg);
+}
+
+.report-section {
+  min-width: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.section-heading h2 {
+  margin-top: 5px !important;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--accent-strong);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.15px;
+}
+
+.section-description {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.section-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 18px;
+}
+
+
+/* =====================================================
+   DISCLAIMER
+===================================================== */
+
+.report-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 13px 16px;
+  border-radius: var(--r-md);
+  line-height: 1.6;
+}
+
+.report-banner p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.banner-icon {
+  flex: 0 0 auto;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   TOP SUMMARY GRID
+===================================================== */
+
+.report-top-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.5fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.summary-card,
+.advice-card {
+  min-width: 0;
+  height: 100%;
+}
+
+.summary-card #ringkas {
+  min-width: 0;
+}
+
+.big-pct {
+  font-size: clamp(40px, 5vw, 54px);
+  font-weight: 850;
+  color: var(--accent-strong);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 8px 0 16px;
+}
+
+.stackbar {
+  display: flex;
+  width: 100%;
+  height: 11px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--line);
+  margin: 14px 0;
+}
+
+.stackbar i {
+  display: block;
+  height: 100%;
+  min-width: 0;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 16px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend i {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  flex: 0 0 8px;
+  border-radius: 50%;
+}
+
+.kual {
+  margin: 14px 0;
+}
+
+.summary-card #ringkas > p:last-child {
+  margin-top: 18px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+
+/* =====================================================
+   ADVICE & STRENGTHS
+===================================================== */
+
+.saran {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.saran li {
+  position: relative;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.saran li small {
+  display: block;
+  margin-top: 5px;
+}
+
+.strength-section {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.strength-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.strength-heading h3 {
+  margin: 0;
+}
+
+.strength-icon {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kekuatan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.kekuatan .chip {
+  max-width: 100%;
+  padding: 7px 11px;
+  border-radius: 99px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   RUBRIC
+===================================================== */
+
+#rubrik {
+  min-width: 0;
+}
+
+.rub-q {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.rub-q:first-child {
+  padding-top: 0;
+}
+
+.rub-q:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 8px;
+}
+
+.rub-head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.rub-head b {
+  font-size: 14px;
+}
+
+.rub-head .muted {
+  line-height: 1.6;
+}
+
+.rub-row {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  padding: 13px 14px;
+  margin: 8px 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg);
+}
+
+.rub-row > div {
+  min-width: 0;
+}
+
+.rub-row > div > div:first-child {
+  line-height: 1.6;
+}
+
+.rub-row .badge {
+  justify-self: start;
+  white-space: nowrap;
+}
+
+.rub-row .muted {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.rub-row b {
+  font-size: 13px;
+}
+
+.rub-q > .muted.small {
+  margin-top: 12px;
+}
+
+.rub-feedback {
+  padding: 14px 16px;
+  border-radius: var(--r-md);
+  background: var(--accent-soft);
+}
+
+.rub-feedback b {
+  font-size: 13px;
+}
+
+.rub-feedback p {
+  margin: 7px 0 0;
+  font-size: 13px;
+}
+
+.rub-q ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.rub-q li {
+  padding: 3px 0;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* =====================================================
+   COMPUTER VISION LAYOUT
+===================================================== */
+
+.ind-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.indicator-card {
+  min-width: 0;
+}
+
+.report-chart-column {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.chart-card {
+  min-width: 0;
+}
+
+.chart-card .section-heading {
+  margin-bottom: 12px;
+}
+
+.chart-card > div:last-child {
+  min-width: 0;
+}
+
+.chart-card svg,
+.chart-card canvas {
+  max-width: 100%;
+}
+
+.chart-card p {
+  margin-top: 12px;
+}
+
+.cv-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 12px 0 20px;
+}
+
+.cv-summary-item {
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg);
+}
+
+.cv-summary-item .muted {
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.cv-summary-item b {
+  display: block;
+  margin-top: 6px;
+  font-size: 23px;
+  line-height: 1.2;
+}
+
+.aspek {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.aspek:first-of-type {
+  padding-top: 0;
+}
+
+.aspek:last-of-type {
+  border-bottom: 0;
+}
+
+.aspek-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.aspek-head > b {
+  font-size: 14px;
+}
+
+.aspek p {
+  margin: 6px 0;
+}
+
+.aspek .bar {
+  height: 7px;
+  margin-top: 7px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--line);
+}
+
+.aspek .bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.aspek .small {
+  line-height: 1.55;
+}
+
+.indicator-card > #aspek > p:last-child {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+
+/* =====================================================
+   SESSION COMPARISON — COMPACT
+===================================================== */
+
+#banding {
+  min-width: 0;
+}
+
+#banding .section-heading {
+  margin-bottom: 12px;
+}
+
+#banding .section-heading h2 {
+  font-size: 17px;
+}
+
+#banding .section-description {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+#banding .section-icon {
+  width: 32px;
+  height: 32px;
+  flex-basis: 32px;
+  font-size: 15px;
+}
+
+#bandingBody {
+  min-width: 0;
+  padding: 12px;
+  border-radius: var(--r-md);
+  background: var(--bg);
+}
+
+#bandingBody p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+#bandingBody h3 {
+  margin: 12px 0 8px;
+  font-size: 13px;
+}
+
+/* Grafik */
+#bandingBody svg {
+  display: block;
+  width: 100%;
+  height: 210px !important;
+  max-height: 210px;
+}
+
+#bandingBody canvas {
+  max-width: 100%;
+  max-height: 210px !important;
+}
+
+/* Keterangan grafik */
+#bandingBody .legend {
+  margin-top: 7px;
+  gap: 6px 12px;
+  font-size: 10px;
+}
+
+/* Kartu statistik dan riwayat */
+#bandingBody [class*="stat"],
+#bandingBody [class*="summary"],
+#bandingBody [class*="attempt"],
+#bandingBody [class*="history"],
+#bandingBody [class*="comparison"] {
+  min-width: 0;
+  padding: 9px 11px;
+  border-radius: 10px;
+}
+
+/* Teks di kartu */
+#bandingBody [class*="stat"] b,
+#bandingBody [class*="summary"] b,
+#bandingBody [class*="attempt"] b,
+#bandingBody [class*="history"] b {
+  font-size: 12px;
+}
+
+#bandingBody [class*="stat"] small,
+#bandingBody [class*="summary"] small,
+#bandingBody [class*="attempt"] small,
+#bandingBody [class*="history"] small {
+  font-size: 10px;
+}
+
+/* Jarak antarbagian */
+#bandingBody > * + * {
+  margin-top: 10px;
+}
+
+
+/* =====================================================
+   QUESTION TABS
+===================================================== */
+
+.question-section {
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 4px 2px 14px;
+  margin-bottom: 18px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+
+.tabs .tab {
+  flex: 0 0 auto;
+  min-width: 58px;
+  padding: 9px 17px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--bg);
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tabs .tab:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.tabs .tab.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+
+/* =====================================================
+   QUESTION DETAIL
+===================================================== */
+
+#qDetail {
+  min-width: 0;
+}
+
+.qd-head {
+  padding: 16px;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg);
+}
+
+.qd-head p:first-child {
+  margin: 0 0 7px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.qd-head p:nth-child(2) {
+  margin: 0;
+}
+
+.qd-head .warn-box {
+  margin-top: 12px;
+}
+
+.qd {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.qd > div {
+  min-width: 0;
+}
+
+.qd h3 {
+  margin: 22px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.qd > div > h3:first-child {
+  margin-top: 0;
+}
+
+.qd p {
+  overflow-wrap: anywhere;
+}
+
+.qd ul {
+  padding-left: 20px;
+  margin: 8px 0 16px;
+}
+
+.qd li {
+  padding: 3px 0;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* =====================================================
+   COMPUTER VISION TIMELINE
+===================================================== */
+
+.tl-row {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.tl-row > span {
+  line-height: 1.4;
+}
+
+.tl {
+  position: relative;
+  height: 13px;
+  border-radius: 99px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.tl.dim {
+  opacity: 0.45;
+}
+
+.seg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.seg.good {
+  background: var(--good);
+}
+
+.seg.warn {
+  background: var(--warn);
+}
+
+.seg.bad {
+  background: var(--bad);
+}
+
+.qd .legend {
+  margin: 14px 0 22px;
+}
+
+
+/* =====================================================
+   TRANSCRIPT
+===================================================== */
+
+.transkrip {
+  padding: 16px;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.qd .transkrip + p {
+  margin-top: 8px;
+}
+
+
+/* =====================================================
+   WARN BOX
+===================================================== */
+
+.warn-box {
+  padding: 11px 14px;
+  margin: 10px 0;
+  border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent);
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--warn) 12%, var(--bg));
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   BUTTON ACTIONS
+===================================================== */
+
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.report-actions .btn {
+  min-height: 42px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.report-actions .btn span {
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .report-top-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  }
+
+  .ind-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-chart-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .qd {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .qd > div + div {
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  #wrap {
+    gap: 14px;
+    padding-bottom: 20px;
+  }
+
+  .report-top-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .report-card {
+    padding: 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 17px;
+  }
+
+  #wrap h2 {
+    font-size: 17px;
+  }
+
+  .section-icon {
+    width: 33px;
+    height: 33px;
+    flex-basis: 33px;
+    font-size: 15px;
+  }
+
+  .big-pct {
+    font-size: 43px;
+  }
+
+  .report-chart-column {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .cv-summary-grid {
+    gap: 7px;
+  }
+
+  .cv-summary-item {
+    padding: 10px;
+  }
+
+  .cv-summary-item b {
+    font-size: 19px;
+  }
+
+  .cv-summary-item .muted {
+    font-size: 10px;
+  }
+
+  .rub-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .tl-row {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .qd-head {
+    padding: 13px;
+  }
+
+  .report-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .report-actions .btn {
+    width: 100%;
+    padding-inline: 9px;
+    font-size: 11px;
+  }
+
+  .report-actions #againLink {
+    grid-column: 1 / -1;
+  }
+
+  /* Riwayat performa mobile */
+  #bandingBody {
+    padding: 9px;
+  }
+
+  #bandingBody svg {
+    height: 175px !important;
+    max-height: 175px;
+  }
+
+  #bandingBody canvas {
+    max-height: 175px !important;
+  }
+
+}
+
+
+/* =====================================================
+   PRINT REPORT
+===================================================== */
+
+@media print {
+
+  body {
+    background: white !important;
+    color: #222 !important;
+  }
+
+  #wrap {
+    max-width: none;
+    gap: 14px;
+  }
+
+  #wrap .card {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .report-actions,
+  .tabs {
+    display: none !important;
+  }
+
+  .report-top-grid,
+  .ind-grid,
+  .qd {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .report-card {
+    padding: 16px;
+  }
+
+  .rub-q,
+  .aspek,
+  .chart-card,
+  .cv-summary-item {
+    break-inside: avoid;
+  }
+
+  .rub-row,
+  .transkrip,
+  .qd-head {
+    break-inside: avoid;
+  }
+
+  .report-banner {
+    border: 1px solid #ccc;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+}

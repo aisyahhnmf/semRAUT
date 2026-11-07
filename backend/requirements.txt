@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+supabase
+python-dotenv
+python-multipart
+pydantic
+groq
+
+# Computer Vision
+opencv-python
+torch
+torchvision
+timm
+numpy

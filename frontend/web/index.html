@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="id" data-theme="langit">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>FOKARA</title>
+
+  <link
+    rel="icon"
+    href="assets/img/favicon.svg"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/tokens.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/pages/home.css"
+  >
+</head>
+
+<body data-root="">
+
+  <div id="content" class="stack">
+
+    <section class="card hero">
+
+      <h2>
+        Latih wawancara, lihat bagaimana Anda terlihat dan terdengar.
+      </h2>
+
+      <p class="muted">
+        Pilih posisi, jawab pertanyaan di depan kamera, lalu terima
+        umpan balik: pemenuhan rubrik jawaban, arah pandang, postur,
+        dan cara bicara, lengkap dengan saran latihan.
+      </p>
+
+      <a class="btn primary" href="pages/roles.html">
+        Mulai latihan
+      </a>
+
+    </section>
+
+    <section class="grid g3">
+
+      <div class="card">
+        <span class="chip">1</span>
+        <h3>Pilih posisi</h3>
+        <p class="muted">
+          Pertanyaan dan rubrik mengikuti posisi yang Anda tuju.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="chip">2</span>
+        <h3>Jawab di depan kamera</h3>
+        <p class="muted">
+          Rekaman dianalisis setelah sesi selesai, termasuk transkrip ucapan.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="chip">3</span>
+        <h3>Perbaiki</h3>
+        <p class="muted">
+          Terima saran beserta bukti, lalu ulangi dan bandingkan hasilnya.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="card last" id="lastCard" hidden>
+
+      <div>
+        <div class="muted small">Laporan terakhir</div>
+        <b id="lastRole"></b>
+        <div class="muted small" id="lastDate"></div>
+      </div>
+
+      <div>
+        <b class="last-score" id="lastScore"></b>
+        <div class="muted small">pemenuhan rubrik</div>
+      </div>
+
+      <a class="btn" id="lastLink" href="#">
+        Buka laporan
+      </a>
+
+    </section>
+
+    <p class="banner">
+      FOKARA adalah alat latihan, bukan sistem seleksi.
+      Indikator visual bukan bukti kejujuran atau kompetensi.
+    </p>
+
+  </div>
+
+  <script
+    type="module"
+    src="assets/js/pages/home.js"
+  ></script>
+
+</body>
+</html>

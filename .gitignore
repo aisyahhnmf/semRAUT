@@ -1,0 +1,22 @@
+# Environment dan credentials
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Editor
+.vscode/
+
+# Sistem
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+# Virtual environment
+venv/

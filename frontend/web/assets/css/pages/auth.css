@@ -1,0 +1,36 @@
+.auth-page{min-height:100vh;background:var(--bg)}
+.auth-layout{min-height:100vh;display:grid;grid-template-columns:minmax(320px,1fr) minmax(420px,.9fr)}
+.auth-intro{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding:42px clamp(28px,6vw,88px);color:#fff;background:linear-gradient(145deg,#01957F 0%,#00C2A5 58%,#00FED9 100%);overflow:hidden}
+.auth-intro:after{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(255,255,255,.2);border-radius:50%;right:-180px;bottom:-190px;box-shadow:0 0 0 45px rgba(255,255,255,.06),0 0 0 95px rgba(255,255,255,.04)}
+.auth-brand{display:inline-flex;align-items:center;gap:12px;width:max-content;color:#fff;font-size:22px;font-weight:700;letter-spacing:-.5px}
+.auth-brand>span:last-child>span{font-weight:400}
+.auth-mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.65);border-radius:12px;font-size:25px}
+.auth-intro-copy{position:relative;z-index:1;max-width:560px;margin:auto 0}
+.auth-kicker{font-size:11px;font-weight:800;letter-spacing:2px;opacity:.8}
+.auth-intro h1{font-size:clamp(36px,5vw,62px);line-height:1.12;letter-spacing:-2px;margin:18px 0}
+.auth-intro h1 span{color:#C3FFF7}
+.auth-intro-copy p{max-width:440px;color:rgba(255,255,255,.88);font-size:15px;line-height:1.8}
+.auth-disclaimer{position:relative;z-index:1;color:rgba(255,255,255,.75);font-size:12px}
+.auth-panel-wrap{display:grid;place-items:center;padding:36px 24px;background:#EEFFF7}
+.auth-panel{width:min(100%,430px);padding:clamp(24px,4vw,42px);background:#fff;border:1px solid #C3FFF7;border-radius:22px;box-shadow:0 18px 55px rgba(1,64,54,.09)}
+.auth-heading h2{font-size:26px;letter-spacing:-.8px;margin:10px 0 6px;color:#123B36}
+.auth-heading p{color:#52756D;font-size:13px}
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;margin:26px 0 22px;border-radius:12px;background:#EEFFF7}
+.auth-tab{padding:10px;border:0;border-radius:9px;background:transparent;color:#52756D;font-weight:700}
+.auth-tab.active{background:#01957F;color:#fff;box-shadow:0 3px 9px rgba(1,149,127,.18)}
+.auth-form{display:flex;flex-direction:column;gap:9px}
+.auth-form label{font-size:12px;font-weight:700;color:#123B36;margin-top:5px}
+.auth-form input{width:100%;height:46px;padding:0 13px;border:1px solid #C3FFF7;border-radius:10px;background:#fff;color:#123B36;outline:none}
+.auth-form input:focus{border-color:#01957F;box-shadow:0 0 0 3px rgba(0,194,165,.13)}
+.password-wrap{position:relative}
+.password-wrap input{padding-right:65px}
+.password-toggle{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#01957F;font-size:12px;font-weight:700}
+.auth-submit{width:100%;height:46px;justify-content:center;margin-top:12px;border:0}
+.auth-submit:disabled{opacity:.65;cursor:wait}
+.auth-message{min-height:18px;font-size:12px;color:#52756D}
+.auth-message.error{color:#C65B65}
+.auth-message.success{color:#01957F}
+.auth-switch{text-align:center;margin-top:16px;color:#52756D;font-size:12px}
+.auth-switch button{border:0;background:transparent;color:#01957F;font-weight:800}
+.auth-security{text-align:center;margin-top:24px;color:#8AA69F;font-size:10px}
+@media(max-width:760px){.auth-layout{grid-template-columns:1fr}.auth-intro{min-height:260px;padding:24px 26px 30px}.auth-intro-copy{margin:36px 0 0}.auth-intro h1{font-size:36px}.auth-intro-copy p{font-size:13px}.auth-disclaimer{margin-top:28px}.auth-panel-wrap{padding:24px 16px 40px}.auth-panel{box-shadow:none}}
